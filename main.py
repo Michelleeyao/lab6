@@ -8,8 +8,15 @@ def encode(phrase):  # Michelle
             value -= 10
         phrase_list[index] = value
     return "".join(phrase_list)
+
+
 def decode(phrase): #Ryan
-    pass
+    phrase_list = list(phrase)
+    print(phrase_list)
+    for index in range(0, len(phrase)):
+        value = phrase_list[index]
+        value -= 3
+        phrase_list[index] = value
 
 
 def main():
